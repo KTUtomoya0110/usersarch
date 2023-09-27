@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search Result</title>
+  </head>
+  <body>
+    <h1>Search Result</h1>
+    <div
+      th:if="${errorMessage}"
+      class="error-message"
+      th:text="${errorMessage}"
+    ></div>
+    <div th:if="${user}">
+      <p>ユーザ名: <span th:text="${user.username}"></span></p>
+      <!-- 他のユーザー情報をここに表示できます -->
+    </div>
+  </body>
+</html>
